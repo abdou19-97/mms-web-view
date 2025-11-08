@@ -1,0 +1,221 @@
+# Modern Material Supply - Building Materials Website
+
+A clean, professional static website for a building materials supply business in Mauritania, built with React and Tailwind CSS.
+
+## Features
+
+- ✅ 5 Complete Pages (Home, Products, Services, About, Contact)
+- ✅ Fully Mobile Responsive
+- ✅ Clean, Professional Design
+- ✅ Fast Loading with Vite
+- ✅ Easy to Customize
+- ✅ WhatsApp Integration
+- ✅ Smooth Scrolling Navigation
+
+## Quick Start
+
+### 1. Install Dependencies
+
+```bash
+npm install
+```
+
+### 2. Run Development Server
+
+```bash
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`
+
+### 3. Build for Production
+
+```bash
+npm run build
+```
+
+This creates an optimized production build in the `dist` folder.
+
+### 4. Preview Production Build
+
+```bash
+npm run preview
+```
+
+## Customization Guide
+
+### Change Company Name
+
+In `src/App.jsx`, search for "BuildMart" and replace with your company name:
+
+```jsx
+<h1 className="text-2xl font-bold text-blue-600">YourCompanyName</h1>
+```
+
+### Update Contact Information
+
+In the `Contact` component in `src/App.jsx`, update:
+
+- **Phone**: Replace `+222 1234 5678`
+- **WhatsApp**: Replace `+22212345678` in the `wa.me` URLs
+- **Email**: Replace `info@buildmart.mr`
+- **Location**: Update the address text
+
+```jsx
+<a href="tel:+22212345678">+222 1234 5678</a>
+<a href="https://wa.me/22212345678">+222 1234 5678</a>
+<a href="mailto:info@buildmart.mr">info@buildmart.mr</a>
+```
+
+### Modify Products
+
+In the `Products` component, edit the `productCategories` array:
+
+```jsx
+const productCategories = [
+  {
+    name: "Your Category Name",
+    description: "Category description",
+    items: ["Item 1", "Item 2", "Item 3"],
+  },
+  // Add more categories...
+];
+```
+
+### Update Services
+
+In the `Services` component, edit the `services` array to match your offerings.
+
+### Change Colors
+
+The site uses blue as the primary color. To change it:
+
+1. Open `src/App.jsx`
+2. Search for `blue-` (e.g., `bg-blue-600`, `text-blue-600`)
+3. Replace with your preferred color:
+   - `red-600`, `green-600`, `purple-600`, etc.
+   - Or use custom Tailwind colors
+
+### Modify Content
+
+All content is in `src/App.jsx`. Each section is a separate component:
+
+- `Hero` - Home page intro and mission
+- `Products` - Product categories
+- `Services` - Additional services page
+- `About` - About us section
+- `Contact` - Contact information
+- `Footer` - Footer content
+
+### Add Images
+
+To add images:
+
+1. Create a `public/images` folder
+2. Add your images there
+3. Reference them in the code:
+
+```jsx
+<img src="/images/your-image.jpg" alt="Description" />
+```
+
+Example in the Hero section:
+
+```jsx
+<div className="mt-8">
+  <img
+    src="/images/hero-banner.jpg"
+    alt="Building materials"
+    className="rounded-lg shadow-xl"
+  />
+</div>
+```
+
+### Business Hours
+
+Update in the `Contact` component:
+
+```jsx
+<div className="flex justify-between">
+  <span className="text-gray-700">Your Days</span>
+  <span className="font-semibold text-gray-900">Your Hours</span>
+</div>
+```
+
+## Project Structure
+
+```
+buildmart-mauritania/
+├── index.html              # Entry HTML file
+├── package.json            # Dependencies and scripts
+├── vite.config.js          # Vite configuration
+├── tailwind.config.js      # Tailwind CSS configuration
+├── postcss.config.js       # PostCSS configuration
+└── src/
+    ├── main.jsx            # React entry point
+    ├── App.jsx             # Main application with all components
+    └── index.css           # Global styles and Tailwind imports
+```
+
+## Deployment
+
+### Option 1: Netlify (Recommended)
+
+1. Push your code to GitHub
+2. Connect to Netlify
+3. Build command: `npm run build`
+4. Publish directory: `dist`
+
+### Option 2: Vercel
+
+1. Push your code to GitHub
+2. Import to Vercel
+3. It auto-detects Vite configuration
+
+### Option 3: Traditional Hosting
+
+1. Run `npm run build`
+2. Upload the `dist` folder to your web host
+3. Point your domain to the uploaded files
+
+## Tech Stack
+
+- **React 18** - UI library
+- **Vite** - Build tool and dev server
+- **Tailwind CSS** - Utility-first CSS framework
+- **Lucide React** - Icon library
+
+## Performance
+
+- Optimized for fast loading
+- Minimal dependencies
+- Responsive images ready
+- Production build is highly compressed
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers
+
+## Customization Tips
+
+1. **Keep it simple** - The design is intentionally clean and professional
+2. **Mobile first** - Test on mobile devices regularly
+3. **Optimize images** - Compress images before adding them
+4. **SEO** - Update the meta description in `index.html`
+5. **Analytics** - Add Google Analytics in `index.html` if needed
+
+## Support
+
+For questions about React or Tailwind CSS:
+
+- React: https://react.dev
+- Tailwind CSS: https://tailwindcss.com
+- Vite: https://vitejs.dev
+
+## License
+
+This is a starter template for your business. Customize it as needed!
