@@ -9,6 +9,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import mmsLogo from "./assets/mms-logo.png";
+import backgroundImage from "./assets/background.png";
 
 // Navigation Component
 const Navigation = () => {
@@ -869,7 +870,16 @@ const Footer = () => {
 // Main App Component
 export default function App() {
   return (
-    <div className="min-h-screen">
+    <div
+      className="min-h-screen"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundAttachment: "fixed",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <Navigation />
       <Hero />
       <TrustBadges />
