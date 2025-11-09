@@ -33,40 +33,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f5f5f5;
+  /* Apply background directly to body with visible opacity */
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: #e8e8e8;
   min-height: 100vh;
 }
 
-/* Building materials background with semi-transparent overlay for readability */
-body::before {
+/* White overlay on body for content readability */
+body::after {
   content: '';
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.12;
+  background: rgba(255, 255, 255, 0.85);
   z-index: -1;
   pointer-events: none;
-}
-
-/* Make white sections semi-transparent so background shows through */
-section[class*="bg-white"],
-section[class*="bg-gray"] {
-  background-color: rgba(255, 255, 255, 0.92) !important;
-}
-
-/* Keep cards and nav opaque for readability */
-nav {
-  background-color: rgba(255, 255, 255, 0.98) !important;
-  backdrop-filter: blur(10px);
-}
-
-.bg-white.rounded-lg,
-.bg-gray-50.rounded-lg {
-  background-color: rgba(255, 255, 255, 0.95) !important;
 }
