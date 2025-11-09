@@ -90,7 +90,7 @@ const TrustBadges = () => {
   ];
 
   return (
-    <section className="py-16 bg-white border-y border-gray-200">
+    <section className="py-16 bg-white/80 border-y border-gray-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
@@ -110,7 +110,7 @@ const TrustBadges = () => {
 // Bulk Order Request Form
 const BulkOrderForm = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+    <section className="py-20 bg-white/80 from-blue-600 to-blue-800 text-white">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
@@ -122,7 +122,7 @@ const BulkOrderForm = () => {
           </p>
         </div>
 
-        <div className="bg-white rounded-lg p-8 text-gray-900">
+        <div className="bg-white/80 rounded-lg p-8 text-gray-900">
           <form className="space-y-6">
             <div className="grid md:grid-cols-2 gap-6">
               <div>
@@ -251,7 +251,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-gray-50 bg-white/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -328,10 +328,7 @@ const PaymentTerms = () => {
 // Hero Section
 const Hero = () => {
   return (
-    <section
-      id="home"
-      className="pt-16 bg-gradient-to-br from-blue-50 to-white"
-    >
+    <section id="home" className="pt-16 bg-white/80 from-blue-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -427,7 +424,7 @@ const Products = () => {
   ];
 
   return (
-    <section id="products" className="py-20 bg-white">
+    <section id="products" className="py-20 bg-white/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -621,7 +618,7 @@ const About = () => {
 // Contact Section
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-white/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
