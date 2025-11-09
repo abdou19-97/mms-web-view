@@ -17,6 +17,7 @@ const Navigation = () => {
   const navItems = [
     { name: "Home", href: "#home" },
     { name: "Products", href: "#products" },
+    { name: "Bulk Order", href: "#bulk-order" },
     { name: "Services", href: "#services" },
     { name: "About Us", href: "#about" },
     { name: "Contact", href: "#contact" },
@@ -75,6 +76,251 @@ const Navigation = () => {
         </div>
       )}
     </nav>
+  );
+};
+
+// Trust & Certifications Section
+const TrustBadges = () => {
+  const stats = [
+    { number: "15+", label: "Years Experience" },
+    { number: "500+", label: "Projects Completed" },
+    { number: "50+", label: "Corporate Clients" },
+    { number: "24/7", label: "Customer Support" },
+  ];
+
+  return (
+    <section className="py-16 bg-white border-y border-gray-200">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+          {stats.map((stat, index) => (
+            <div key={index} className="text-center">
+              <div className="text-4xl font-bold text-blue-600 mb-2">
+                {stat.number}
+              </div>
+              <div className="text-gray-600 font-medium">{stat.label}</div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Bulk Order Request Form
+const BulkOrderForm = () => {
+  return (
+    <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-800 text-white">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Request a Bulk Order Quote
+          </h2>
+          <p className="text-xl text-blue-100">
+            Special pricing for large volume orders. Get your custom quote
+            within 24 hours.
+          </p>
+        </div>
+
+        <div className="bg-white rounded-lg p-8 text-gray-900">
+          <form className="space-y-6">
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-semibold mb-2">
+                  Company Name *
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2">
+                  Contact Person *
+                </label>
+                <input
+                  type="text"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <div>
+                <label className="block text-sm font-semibold mb-2">
+                  Phone Number *
+                </label>
+                <input
+                  type="tel"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                  required
+                />
+              </div>
+              <div>
+                <label className="block text-sm font-semibold mb-2">
+                  Email
+                </label>
+                <input
+                  type="email"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                />
+              </div>
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold mb-2">
+                Products Needed *
+              </label>
+              <textarea
+                rows="4"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                placeholder="List products, quantities, and specifications..."
+                required
+              ></textarea>
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold mb-2">
+                Delivery Location *
+              </label>
+              <input
+                type="text"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                placeholder="City, Region"
+                required
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-semibold mb-2">
+                Additional Information
+              </label>
+              <textarea
+                rows="3"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                placeholder="Project details, timeline, special requirements..."
+              ></textarea>
+            </div>
+
+            <div className="flex gap-4">
+              <a
+                href="https://wa.me/22246619392?text=I%20would%20like%20to%20request%20a%20bulk%20order%20quote"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex-1 bg-green-500 text-white px-8 py-4 rounded-lg font-semibold hover:bg-green-600 transition text-center"
+              >
+                Send via WhatsApp
+              </a>
+              <a
+                href="mailto:abdou@mms.com?subject=Bulk%20Order%20Quote%20Request"
+                className="flex-1 bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition text-center"
+              >
+                Send via Email
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Client Testimonials
+const Testimonials = () => {
+  const testimonials = [
+    {
+      company: "Mauritania Construction Group",
+      person: "Mohamed Al-Rashid",
+      role: "Project Manager",
+      text: "MMS has been our reliable partner for over 5 years. Their quality materials and timely delivery have been crucial to our project success.",
+    },
+    {
+      company: "Desert Infrastructure Ltd",
+      person: "Fatima Hassan",
+      role: "CEO",
+      text: "Excellent service and competitive prices. They handle our bulk orders professionally and always meet our specifications.",
+    },
+    {
+      company: "Nouakchott Developers",
+      person: "Ahmed Ould Cheikh",
+      role: "Procurement Manager",
+      text: "The best supplier in Mauritania. Their technical consultation service helped us save costs on our last three major projects.",
+    },
+  ];
+
+  return (
+    <section className="py-20 bg-gray-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            What Our Clients Say
+          </h2>
+          <p className="text-xl text-gray-600">
+            Trusted by major contractors and developers across Mauritania
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-white rounded-lg p-6 shadow-md">
+              <div className="text-yellow-400 text-2xl mb-4">★★★★★</div>
+              <p className="text-gray-700 mb-6 italic">"{testimonial.text}"</p>
+              <div className="border-t pt-4">
+                <p className="font-bold text-gray-900">{testimonial.person}</p>
+                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="text-sm font-semibold text-blue-600">
+                  {testimonial.company}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+// Payment & Terms
+const PaymentTerms = () => {
+  return (
+    <section className="py-16 bg-blue-50">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+          Flexible Payment Options for Bulk Orders
+        </h3>
+        <div className="grid md:grid-cols-4 gap-6">
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="text-3xl mb-3">💳</div>
+            <h4 className="font-bold mb-2">Credit Terms</h4>
+            <p className="text-sm text-gray-600">
+              30-60 day payment terms for qualified clients
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="text-3xl mb-3">🏦</div>
+            <h4 className="font-bold mb-2">Bank Transfer</h4>
+            <p className="text-sm text-gray-600">
+              Direct bank transfers accepted
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="text-3xl mb-3">📋</div>
+            <h4 className="font-bold mb-2">Letter of Credit</h4>
+            <p className="text-sm text-gray-600">
+              L/C accepted for international orders
+            </p>
+          </div>
+          <div className="bg-white rounded-lg p-6 text-center">
+            <div className="text-3xl mb-3">💰</div>
+            <h4 className="font-bold mb-2">Cash Discount</h4>
+            <p className="text-sm text-gray-600">
+              Special discounts for upfront payment
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
 
@@ -626,8 +872,11 @@ export default function App() {
     <div className="min-h-screen">
       <Navigation />
       <Hero />
+      <TrustBadges />
       <Products />
+      <BulkOrderForm />
       <Services />
+      <Testimonials />
       <About />
       <Contact />
       <Footer />
