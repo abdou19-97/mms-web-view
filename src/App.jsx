@@ -645,7 +645,7 @@ const Contact = () => {
                     href="tel:+22246619392"
                     className="text-gray-700 hover:text-blue-600"
                   >
-                    +222 4661 9392
+                    +222 20 85 01 75
                   </a>
                 </div>
               </div>
@@ -655,12 +655,12 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">WhatsApp</h4>
                   <a
-                    href="https://wa.me/22246619392"
+                    href="https://wa.me/22237619392"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-gray-700 hover:text-blue-600"
                   >
-                    +222 4661 9392
+                    +222 37 61 93 92
                   </a>
                 </div>
               </div>
@@ -689,7 +689,7 @@ const Contact = () => {
                         href="mailto:orders@mms.com"
                         className="text-gray-700 hover:text-blue-600"
                       >
-                        abdou@mms.com
+                        abdousidiya@modernmaterialsupply.com
                       </a>
                     </div>
                   </div>
@@ -769,7 +769,7 @@ const Contact = () => {
                   className="flex items-center justify-center text-gray-700 hover:text-blue-600"
                 >
                   <Phone size={16} className="mr-2" />
-                  +222 4661 9392
+                  +222 46 61 93 92
                 </a>
                 <a
                   href="https://wa.me/22246619392"
@@ -796,16 +796,7 @@ const Contact = () => {
                   className="flex items-center justify-center text-gray-700 hover:text-blue-600"
                 >
                   <Phone size={16} className="mr-2" />
-                  +222 4661 9392
-                </a>
-                <a
-                  href="https://wa.me/22246619392"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center justify-center text-gray-700 hover:text-green-600"
-                >
-                  <MessageCircle size={16} className="mr-2" />
-                  WhatsApp
+                  +222 20 85 01 75
                 </a>
               </div>
             </div>
@@ -825,10 +816,10 @@ const Contact = () => {
                   className="flex items-center justify-center text-gray-700 hover:text-blue-600"
                 >
                   <Phone size={16} className="mr-2" />
-                  +222 9876 5432
+                  +222 37 61 93 92
                 </a>
                 <a
-                  href="https://wa.me/22298765432"
+                  href="https://wa.me/22237619392"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center text-gray-700 hover:text-green-600"
